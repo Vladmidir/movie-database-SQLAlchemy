@@ -1,0 +1,24 @@
+/* Using this color palette: https://colorhunt.co/palette/8294c4acb1d6dbdfeaffead2 */
+
+body {
+    height: 100vh;
+    background-color: rgb(255, 234, 210);
+}
+
+.nav-link {
+    color: rgb(130, 148, 196);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    background-color: rgb(172, 177, 214);
+    border-radius: 5px;
+}
+
+.movie {
+    background-color: hsla(32, 100%, 65%, 0.378);
+    margin-left: 10px;
+    padding: 20px;
+    max-width: 40%;
+}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+    <h1>{% block title %} Edit {{ movie.name }} {% endblock %}</h1>
+
+    <div>
+        <form class="form-block" method="POST">
+            <!--divs for bootstrap-->
+            <div >
+                <label for="name">Movie Name</label>
+                <input name="name" type="text" value="{{ movie.name }}" required>
+            </div>
+            <div >
+                <label for="description">Description</label>
+                <textarea name="description" cols="30" rows="10">{{ movie.description }}</textarea>
+            </div>
+            <div >
+                <!--Make this a drop down for now. Add visual stars in the future-->
+                <label for="rating">Movie rating</label>
+                <select name="rating">
+
+                    {% for num in range(10) %} 
+                        {% if num + 1 == movie.rating %} 
+                            <option value="{{ movie.rating }}" selected="selected">{{ movie.rating }}</option>
+                        {% else %} 
+                            <option value="{{ num + 1}}">{{ num + 1 }}</option>
+                        {% endif %} 
+                    {% endfor %}
+                </select>
+            </div>
+            <div >
+                <input type="submit" value="Save"></input>
+                <button>
+                    <span>
+                        <a href="{{ url_for('movie', movie_id=movie.id) }}" style="text-decoration: none; color: black;">
+                            Cancel
+                        </a>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

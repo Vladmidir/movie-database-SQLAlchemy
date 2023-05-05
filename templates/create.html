@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+    <h1>{% block title %}Add a new movie{% endblock %} </h1>
+
+    <div>
+        <form class="form-block" method="POST">
+            <!--divs for bootstrap-->
+            <div >
+                <label for="name">Movie Name</label>
+                <input name="name" type="text" required>
+            </div>
+            <div >
+                <label for="description">Description</label>
+                <textarea name="description" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div >
+                <!--Make this a drop down for now. Add visual stars in the future-->
+                <label for="rating">Movie rating</label>
+                <select name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div >
+                <input type="submit" value="add"></input>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
