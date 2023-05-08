@@ -54,6 +54,8 @@ We can use `Flask-Migrate` extension.
       `Class.query.get(1)` (id is the key in this case)
 
 ## Future development
+Style this thing properly, so it looks pretty.
+
 I can make a form that takes in a movie name.
 Then I would pass the POST request and search for the 
 movie in the database. Return the list of movies that have
@@ -66,7 +68,6 @@ utilize some movie database API.
 List movies in the order ranked.
 
 List movies by the release date.
-
 
 Get movies from the database. Store user's saved movies by the 
 id refereces from the API database. Store id:user_rating:user_description.
