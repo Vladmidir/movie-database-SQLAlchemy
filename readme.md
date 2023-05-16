@@ -1,4 +1,4 @@
-# Movie DB with SQlAlchemy
+# Movie DB with SQLAlchemy
 
 
 ## Table of contents
@@ -23,8 +23,11 @@ Allows the user to
 ### Screenshots
 Homepage
 ![homepage](./screenshots/homepage.jpg)
+Adding a movie
 ![add movie](./screenshots/add-movie.jpg)
+Editing a movie
 ![edit movie](./screenshots/edit-movie.jpg)
+Movie details
 ![movie page](./screenshots/movie-page.jpg)
 
 ## My process
